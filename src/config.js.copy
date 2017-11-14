@@ -1,0 +1,9 @@
+const IS_LOCAL = process.env.NODE_ENV !== 'production';
+const GOOGLE_CLIENT_ID = "<YOUR_CLIENT_ID>";
+const GOOGLE_CALLBACK_URL =  IS_LOCAL ? "http://localhost:8080/auth/google/callback" : "<YOUR_PRODUCTION_URL>";
+
+module.exports = {
+    IS_LOCAL,
+    GOOGLE_CLIENT_ID,
+    GOOGLE_CALLBACK_URL
+}
